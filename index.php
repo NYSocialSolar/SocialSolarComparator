@@ -11,17 +11,11 @@
 
 <body>
   <h1>Social Solar Comparator</h1>
-  <?php 
-if(isset($_POST) AND !empty($_POST))
-{
-
-	try{
-    	$database = new PDO('mysql:host=localhost:8889;dbname=SocialSolar;charset=utf8', 'root', 'root');
-	}
-	catch(Exception $e){
-		die('Error : '.$e->getMessage());
-	}
-	
+  <?php	
+		try
+			{$database = new PDO('mysql:host=localhost:8889;dbname=SocialSolar;charset=utf8', 'root', 'root');}
+		catch(Exception $e)
+			{die('Error : '.$e->getMessage());}
 	?>
 </body>
 </html>
