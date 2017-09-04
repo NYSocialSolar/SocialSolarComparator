@@ -13,9 +13,11 @@
   <h1>Social Solar Comparator</h1>
   <?php	
 	try{
-		$database = new PDO('mysql:host=localhost:8889;dbname=SocialSolar;charset=utf8', 'root', 'root');}
+		$database = new PDO('mysql:host=localhost:8889;dbname=SocialSolar;charset=utf8', 'root', 'root');
+		}
 	catch(Exception $e){
-	die('Error : '.$e->getMessage());}
+		die('Error : '.$e->getMessage());
+		}
 	?>
 </body>
 </html>
